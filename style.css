@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'GilbeotRainbow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/GilbeotRainbow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: "GilbeotRainbow", sans-serif;
+}
+@media screen and (min-width: 901px) {
+    body{
+        user-select: none;
+        display: flex;
+        background: rgb(255,151,0);
+        background: linear-gradient(90deg, rgba(255,151,0,1) 0%, rgba(255,131,186,1) 68%);
+        gap: 10px;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    body > *{
+        /*container*/
+        display: grid;
+        align-items: baseline;
+        overflow: auto;
+        height: 100vh;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    body > *::-webkit-scrollbar {
+        display: none;
+    }
+    body > * > *{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #title{
+        font-size: 1.5rem;
+        text-align: center;
+        color: white;
+    }
+}
+@media screen and (max-width: 900px) {
+    body{
+        user-select: none;
+        display: flex;
+        background: rgb(255,151,0);
+        background: linear-gradient(90deg, rgba(255,151,0,1) 0%, rgba(255,131,186,1) 68%);
+        gap: 10px;
+        overflow: scroll;
+        flex-direction: column;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    body > * > *{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #title{
+        font-size: 1.25rem;
+        text-align: center;
+        color: white;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
